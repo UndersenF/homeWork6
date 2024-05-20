@@ -31,7 +31,7 @@ public class Main {
 //        task5
         System.out.println("task5");
         for (int year = 1904; year < 2097; year = year + 4) {
-            System.out.printf("%s явялется високосным\n", year);
+            System.out.printf("%s является високосным\n", year);
         }
 
 //        task6
@@ -54,7 +54,7 @@ public class Main {
         int capital = 0;
         for (int i = 1; i < 13; i++) {
             capital += 29000;
-            System.out.printf("Месяц -  %s сумма каноплений равна - %s\n", i, capital );
+            System.out.printf("Месяц -  %s сумма накоплений равна - %s\n", i, capital );
         }
 
 //        task9
@@ -62,9 +62,9 @@ public class Main {
         double capital2 = 29000;
         double total = 0;
         for (int i = 1; i < 13; i++) {
-            total = total + (total * 0.12);
             total = total + capital2;
-            System.out.printf("Месяц -  %s сумма каноплений равна - %s\n", i, total );
+            total = total + (total * 0.12);
+            System.out.printf("Месяц -  %s сумма накоплений равна - %s\n", i, total );
         }
     }
 }
