@@ -61,10 +61,22 @@ public class Main {
         System.out.println("task9");
         double capital2 = 29000;
         double total = 0;
+        double totalInMonth = 0;
         for (int i = 1; i < 13; i++) {
             total = total + capital2;
             total = total + (total * 0.12);
-            System.out.printf("Месяц -  %s сумма накоплений равна - %s\n", i, total );
+            totalInMonth = total * 0.01;
+            System.out.printf("Месяц -  %s сумма накоплений равна - %.2f\n", i, totalInMonth );
+        }
+
+//        task10
+        System.out.println("task10");
+
+        int result = 0;
+
+        for (int i = 1; i < 11; i++) {
+            result = 2 * i;
+            System.out.printf("2 * %s = %s\n", i, result);
         }
     }
 }
